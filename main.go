@@ -26,5 +26,10 @@ func main() {
 		log.Print("Init failed", err)
 		return
 	}
+	err := http.ListenAndServe(":8090", nil)
+        if err != nil {
+          log.Print("ListenAndServe: ", err.Error())
+     	}
+
 	chassis.Run()
 }
