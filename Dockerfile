@@ -1,4 +1,4 @@
-FROM 192.168.0.249:20202/hwcse/as-go:1.8.5
+FROM 192.168.0.237:20202/hwcse/as-go:1.8.5
 
 COPY ./go113 /home
 COPY ./conf /home/conf
